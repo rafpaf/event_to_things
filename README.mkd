@@ -31,4 +31,6 @@ could be rewritten without shell commands.)
 
 # Configure
 
+    mv localsettings.sample.py localsettings.py
 
+Edit that file
