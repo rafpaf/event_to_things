@@ -12,6 +12,18 @@ Create a virtual environment:
 My virtualenv creates environments in `$HOME/.envs`. If yours creates them
 elsewhere, update the references to that directory below.
 
+Install the dependencies:
+
+    pip install -r requirements.txt
+
+## Configure
+
+    mv localsettings.sample.py localsettings.py
+
+Edit that file.
+
+## Schedule
+
 Edit cron:
 
     crontab -e
@@ -26,11 +38,5 @@ whatever you wish.
 If you installed this software elsewhere than `$HOME/repos`, modify that
 line accordingly. (We specify the python executable so that the virtualenv is
 used, rather than your system's default python. We pipe to /bin/bash so
-that the shell commands in the script work. Presumably this script
-could be rewritten without shell commands.)
-
-## Configure
-
-    mv localsettings.sample.py localsettings.py
-
-Edit that file.
+that the shell commands in the script work. Presumably this script could be
+rewritten without shell commands.)
