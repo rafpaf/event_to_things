@@ -1,0 +1,34 @@
+This script creates todo list items in the Things app
+(https://culturedcode.com/things/) automatically based on upcoming events.
+Right now it just reminds me of checklists that pertain to upcoming events,
+but it could be easily made to work for other uses.
+
+# Installing
+
+Create a virtual environment:
+
+    mkvirtualenv event_to_things
+
+My virtualenv creates environments in `$HOME/.envs`. If yours creates them
+elsewhere, update the references to that directory below.
+
+Edit cron:
+
+    crontab -e
+
+Add this line:
+
+    0 23 * * * echo '$HOME/.envs/event_to_things/bin/python $HOME/repos/event_to_things/event_to_things.py' | /bin/bash
+
+This will run the script everyday at 11 p.m. Obviously, you can change that to
+whatever you wish.
+
+If you installed this software elsewhere than `$HOME/repos`, modify that
+line accordingly. (We specify the python executable so that the virtualenv is
+used, rather than your system's default python. We pipe to /bin/bash so
+that the shell commands in the script work. Presumably this script
+could be rewritten without shell commands.)
+
+# Configure
+
+
