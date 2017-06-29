@@ -9,13 +9,13 @@ data = (
     {
         'if_event_matches': ['wedding', 'marriage', 'marries', 'weds', 'hitched'],
         'remind_me_to': "Review wedding checklist",
-        'checklist_url': 'https://docs.google.com/document/d/blahblahblah/edit',
+        'notes': 'https://docs.google.com/document/d/blahblahblah/edit',
         'when': ['one day before', 'one week before']
     },
     {
         'if_event_matches': ['flight', 'travel', 'fly'],
         'remind_me_to': "Review travel checklist",
-        'checklist_url': 'https://docs.google.com/document/d/yaddayaddayadda/edit',
+        'notes': 'https://docs.google.com/document/d/yaddayaddayadda/edit',
         'when': ['one day before', 'one week before']
     },
 )
