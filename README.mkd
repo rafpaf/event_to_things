@@ -1,6 +1,6 @@
 # event_to_things
 
-This script creates todo list items in the Things app
+This script creates todo list items in the Mac app Things
 (<https://culturedcode.com/things/>) automatically based on upcoming events in
 your calendar.
 
