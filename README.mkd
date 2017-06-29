@@ -33,4 +33,4 @@ could be rewritten without shell commands.)
 
     mv localsettings.sample.py localsettings.py
 
-Edit that file
+Edit that file.
