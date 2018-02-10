@@ -19,7 +19,7 @@ Install the dependencies:
 
 ## Configure
 
-    mv localsettings.sample.py localsettings.py
+    cp localsettings.sample.py localsettings.py
 
 Edit that file.
 
